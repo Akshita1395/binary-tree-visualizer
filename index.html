@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binary Tree Traversal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Binary Tree Traversal</h1>
+    <p>Enter tree nodes in level-order (e.g., 1,2,3,null,4):</p>
+    <input type="text" id="treeInput" placeholder="e.g., 1,2,3,null,4">
+    <button onclick="generateTree()">Generate Tree</button>
+    
+    <div id="tree-container"></div>
+    
+    <h3>Choose Traversal:</h3>
+    <button onclick="traverse('inorder')">Inorder</button>
+    <button onclick="traverse('preorder')">Preorder</button>
+    <button onclick="traverse('postorder')">Postorder</button>
+    
+    <div id="steps"></div>
+    <div id="result"></div>
+    
+    <p>For feedback, email: akshita9064@gmail.com</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
