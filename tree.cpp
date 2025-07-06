@@ -1,14 +1,12 @@
 #include <iostream>
 using namespace std;
 
-// Structure to define a node
 struct Node {
     int data;
     Node* left;
     Node* right;
 };
 
-// Function to create a new node
 Node* createNode(int value) {
     Node* newNode = new Node();
     newNode->data = value;
@@ -17,7 +15,7 @@ Node* createNode(int value) {
     return newNode;
 }
 
-// Inorder Traversal: Left → Root → Right
+// Inorder Traversal
 void inorderTraversal(Node* root) {
     if (root == NULL){
         return;
@@ -27,7 +25,7 @@ void inorderTraversal(Node* root) {
     inorderTraversal(root->right);
 }
 
-// Preorder Traversal: Root → Left → Right
+// Preorder Traversal
 void preorderTraversal(Node* root) {
     if (root == NULL) {
         return;
@@ -37,7 +35,7 @@ void preorderTraversal(Node* root) {
     preorderTraversal(root->right);
 }
 
-// Postorder Traversal: Left → Right → Root
+// Postorder Traversal
 void postorderTraversal(Node* root) {
     if (root == NULL) {
         return;
@@ -55,7 +53,6 @@ int main() {
     root->left->left = createNode(4);
     root->left->right = createNode(5);
 
-    // Traversals
     cout << "Inorder Traversal: ";
     inorderTraversal(root);
     cout << endl;
